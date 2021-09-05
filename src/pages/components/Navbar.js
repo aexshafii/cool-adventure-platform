@@ -15,18 +15,32 @@ const Navbar = () => {
           </button>
         </div>
         <div className="nav-links show-links">
-          <Link to="/" className="nav-link" activeClassName="active-link">
-            What's included?
-          </Link>
-          <Link to="/" className="nav-link" activeClassName="active-link">
-            Pricing
-          </Link>
-          <Link to="/" className="nav-link" activeClassName="active-link">
-            Sign in
-          </Link>
-          <Link to="/" className="nav-link" activeClassName="active-link">
-            Get started
-          </Link>
+          <div className="nav-link contact-link">
+            <Link
+              to="/whats-included"
+              className="nav-link"
+              activeClassName="active-link"
+            >
+              What's included?
+            </Link>
+            <Link
+              to="/pricing"
+              className="nav-link"
+              activeClassName="active-link"
+            >
+              Pricing
+            </Link>
+            <Link
+              to="/signin"
+              className="nav-link"
+              activeClassName="active-link"
+            >
+              Sign in
+            </Link>
+            <Link to="/getstarted" className="nav-link" className="btn">
+              Get started
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
