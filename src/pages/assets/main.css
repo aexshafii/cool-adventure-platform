@@ -82,11 +82,20 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(1, 0, 0, 0)
+    ),
+    url("./hero-background@2x.png");
   color: var(--textColor);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 p {
@@ -195,7 +204,7 @@ button,
   cursor: pointer;
   appearance: none;
   color: var(--white);
-  background: var(--primary-500);
+  background: #3885f6;
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -378,16 +387,21 @@ form > *:last-child {
   text-align: center;
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: var(--grey-1000);
+  color: white;
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
   border-top: 1px solid var(--grey-500);
   transition: var(--transition);
 }
+
 .active-link {
   color: var(--primary-500);
 }
-
+.contact-link {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
 .contact-link a {
   padding: 0.15rem 1rem;
 }
@@ -423,8 +437,10 @@ form > *:last-child {
     margin-right: 1rem;
     font-size: 1rem;
     white-space: nowrap;
+    padding: 0.15rem 1rem;
   }
-  .contact-link {
+
+  .nav-links-container {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
