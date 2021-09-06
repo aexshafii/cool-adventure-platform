@@ -387,10 +387,7 @@ form > *:last-child {
 .active-link {
   color: var(--primary-500);
 }
-.contact-link {
-  display: flex;
-  justify-content: center;
-}
+
 .contact-link a {
   padding: 0.15rem 1rem;
 }
@@ -415,14 +412,17 @@ form > *:last-child {
   .nav-links {
     height: auto !important;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
+    margin-left: auto;
   }
   .nav-link {
     padding: 0;
     border-top: none;
     margin-right: 1rem;
     font-size: 1rem;
+    white-space: nowrap;
   }
   .contact-link {
     width: 100%;
