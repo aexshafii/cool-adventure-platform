@@ -215,6 +215,10 @@ button,
   font-size: 1rem;
   font-weight: 700;
 }
+.grey {
+  background: grey;
+  margin-left: 1.3125rem;
+}
 button:hover,
 .btn:hover {
   color: var(--white);
