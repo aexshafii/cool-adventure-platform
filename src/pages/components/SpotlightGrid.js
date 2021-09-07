@@ -32,7 +32,7 @@ const SpotlightGrid = ({ title, parapgraph, image }) => {
               </Paper>
             </Grid>
             <Grid item>
-              <Paper className={classes.paper}></Paper>
+              <Paper className={classes.paper}>sup</Paper>
             </Grid>
             <Grid item>
               <Paper className={classes.paper}>MAdrid</Paper>

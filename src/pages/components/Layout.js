@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
     <LayoutWrapper>
       <Navbar></Navbar>
       {children}
-      <SpacingGrid />
     </LayoutWrapper>
   )
 }
