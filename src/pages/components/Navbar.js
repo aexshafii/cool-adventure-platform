@@ -32,10 +32,11 @@ const Navbar = () => {
               className="nav-link"
               activeClassName="active-link"
             >
-              Pricing{" "}
+              Pricing
             </Link>
-            <Link to="/contact" className="btn nav-link contact-link">
-              Get Started{" "}
+            <div className="nav-link"></div>
+            <Link to="/contact" className="btn contact-link">
+              Get Started <span className="arrow-span">{" >"}</span>
             </Link>
           </div>
         </div>
