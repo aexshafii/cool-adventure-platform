@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="brackets-logo" />
           </Link>
-          <button>
+          <button className="nav-btn">
             <FiAlignJustify />
           </button>
         </div>
