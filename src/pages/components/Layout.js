@@ -8,7 +8,7 @@ import "../assets/main.css"
 const Layout = ({ children }) => {
   const LayoutWrapper = styled.section`
     main {
-      padding: 32px;
+      padding: 0px;
     }
   `
   return (

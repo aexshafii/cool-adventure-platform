@@ -54,7 +54,7 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   /* typography */
   --defaultFontSize: 87.5%;
-  --headingFont: "Inconsolata", monospace;
+  --headingFont: "Inter", sans-serif;
   --bodyFont: "Inter", sans-serif;
   --smallText: 0.8em;
   --extraSmallText: 0.7em;
@@ -88,7 +88,7 @@ body {
       rgba(1, 0, 0, 0)
     ),
     url("./hero-background@2x.png");
-  color: var(--textColor);
+  color: white;
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
@@ -106,15 +106,12 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   margin: 0;
   margin-bottom: 1.38rem;
   font-family: var(--headingFont);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.3;
-  text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
 
@@ -123,19 +120,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 0.9rem;
 }
-
 h3 {
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 400 !important;
 }
 
 small,
@@ -208,15 +197,17 @@ button,
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
-  padding: 0.4rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
-  text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
+  width: 9rem;
+  border-radius: 3px;
 }
+
 .grey {
-  background: grey;
+  background: #767d84;
   margin-left: 1.3125rem;
 }
 button:hover,
@@ -368,11 +359,11 @@ form > *:last-child {
 }
 .nav-header img {
   width: 123.76px;
-  margin-left: -6px;
+
   margin-bottom: -9px;
 }
 .nav-btn {
-  padding: 0.15rem 0.75rem;
+  max-width: 3rem;
 }
 .nav-btn svg {
   font-size: 1.2rem;
@@ -391,8 +382,7 @@ form > *:last-child {
 .nav-link {
   display: block;
   text-align: center;
-  font-size: 1.2em;
-  text-transform: capitalize;
+  font-size: 0.9rem;
   color: white;
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
@@ -406,10 +396,7 @@ form > *:last-child {
 .contact-link {
   display: flex;
   justify-content: center;
-  width: 9rem;
   margin: 0 auto;
-  padding: 0.4rem;
-  font-size: 0.8rem;
 }
 .contact-link a {
   padding: 0.15rem 1rem;
@@ -418,7 +405,7 @@ form > *:last-child {
   opacity: 1;
   font-size: 1em;
   position: relative;
-  bottom: 0.05rem;
+  bottom: 0.03rem;
   margin-left: 0.4em;
 }
 
@@ -450,7 +437,7 @@ form > *:last-child {
   .nav-link {
     padding: 0;
     border-top: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
     white-space: nowrap;
     padding: 0.15rem 1rem;
@@ -521,25 +508,26 @@ form > *:last-child {
 }
 
 /*#########*/
-/* About */
+/* Hero */
 /*#########*/
-
-.about-page h2 {
-  text-transform: none;
-  font-weight: bold;
+.hero-btn {
+  padding: 0.7rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
-.about-page {
+.hero-section {
   display: grid;
   gap: 2rem 4rem;
   padding-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.about-img {
-  border-radius: var(--borderRadius);
-  height: 500px;
+.hero-ctas {
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 992px) {
-  .about-page {
+  .hero-section {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 400px;
@@ -584,10 +572,6 @@ form > *:last-child {
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-text h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-  }
 }
 
 /*#########*/

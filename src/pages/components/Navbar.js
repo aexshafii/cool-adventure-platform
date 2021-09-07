@@ -23,7 +23,7 @@ const Navbar = () => {
               className="nav-link"
               activeClassName="active-link"
             >
-              What's Included
+              What's included
             </Link>
 
             <Link
@@ -42,7 +42,7 @@ const Navbar = () => {
             </Link>
             <div className="nav-link"></div>
             <Link to="/getstarted" className="btn contact-link">
-              Get Started <span className="arrow-span">{"›"}</span>
+              Get started <span className="arrow-span">{"›"}</span>
             </Link>
           </div>
         </div>
