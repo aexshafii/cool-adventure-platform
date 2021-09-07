@@ -600,8 +600,8 @@ form > *:last-child {
 
 .recipes-list {
   display: grid;
-  gap: 2rem 1rem;
-  padding-bottom: 3rem;
+  gap: 1rem 1rem;
+  padding-bottom: 0rem;
 }
 .tags-container {
   order: 1;
@@ -628,6 +628,7 @@ form > *:last-child {
 }
 .recipe {
   display: block;
+  background-color: white;
 }
 .recipe-img {
   height: 15rem;

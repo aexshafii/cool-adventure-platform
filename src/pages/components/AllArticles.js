@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-
+import ArticlesList from "./ArticlesList"
 const query = graphql`
   {
     allContentfulArticle(filter: { node_locale: { eq: "en-US" } }) {
@@ -11,8 +11,10 @@ const query = graphql`
         title
         node_locale
         image {
-          gatsbyImageData
+          gatsbyImageData(layout: FIXED, placeholder: TRACED_SVG)
         }
+
+        id
       }
     }
   }
@@ -25,6 +27,7 @@ const AllArticles = () => {
   return (
     <div>
       <h4>All Articles</h4>
+      <ArticlesList articles={articles}></ArticlesList>
     </div>
   )
 }
