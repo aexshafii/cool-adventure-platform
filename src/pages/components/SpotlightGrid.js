@@ -25,11 +25,15 @@ export default function SpacingGrid() {
       <Grid container className={classes.root} spacing={5}>
         <Grid item xs={12}>
           <Grid container justifyContent="center" spacing={4}>
-            {[0, 1, 2].map(value => (
-              <Grid key={value} item>
-                <Paper className={classes.paper} />
-              </Grid>
-            ))}
+            <Grid item>
+              <Paper className={classes.paper}>alo</Paper>
+            </Grid>
+            <Grid item>
+              <Paper className={classes.paper}>Hala</Paper>
+            </Grid>
+            <Grid item>
+              <Paper className={classes.paper}>MAdrid</Paper>
+            </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12}></Grid>
