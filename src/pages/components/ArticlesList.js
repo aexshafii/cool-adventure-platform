@@ -1,6 +1,6 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
-
+import { Link } from "gatsby"
 const ArticlesList = ({ articles = [] }) => {
   return (
     <div className="recipes-list">
@@ -11,6 +11,9 @@ const ArticlesList = ({ articles = [] }) => {
           <div key="" className="recipe">
             <GatsbyImage image={article.image.gatsbyImageData} alt={title} />
             <h4>{article.title}</h4>
+            <Link to="/">
+              Learn More<span className="arrow-span">{"›"}</span>
+            </Link>
           </div>
         )
       })}
