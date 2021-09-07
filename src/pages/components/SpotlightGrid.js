@@ -1,6 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
+
 import Paper from "@material-ui/core/Paper"
 
 const useStyles = makeStyles(theme => ({
@@ -8,8 +9,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   paper: {
-    height: 220,
-    width: 320,
+    height: 240,
+    width: 350,
   },
   control: {
     padding: theme.spacing(2),
@@ -17,14 +18,13 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export default function SpacingGrid() {
-  const [spacing, setSpacing] = React.useState(10)
   const classes = useStyles()
 
   return (
-    <div style={{ paddingLeft: 100, paddingRight: 100 }}>
+    <main className="page">
       <Grid container className={classes.root} spacing={5}>
         <Grid item xs={12}>
-          <Grid container justifyContent="center" spacing={spacing}>
+          <Grid container justifyContent="center" spacing={4}>
             {[0, 1, 2].map(value => (
               <Grid key={value} item>
                 <Paper className={classes.paper} />
@@ -34,6 +34,6 @@ export default function SpacingGrid() {
         </Grid>
         <Grid item xs={12}></Grid>
       </Grid>
-    </div>
+    </main>
   )
 }
