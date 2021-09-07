@@ -17,9 +17,9 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function SpacingGrid() {
+export default function SpotlightGrid({ featureOne = [] }) {
   const classes = useStyles()
-
+  console.log(featureOne.title)
   return (
     <main className="page">
       <Grid container className={classes.root} spacing={5}>
