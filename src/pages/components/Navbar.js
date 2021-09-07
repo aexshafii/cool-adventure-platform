@@ -36,7 +36,7 @@ const Navbar = () => {
             </Link>
             <div className="nav-link"></div>
             <Link to="/contact" className="btn contact-link">
-              Get Started <span className="arrow-span">{" >"}</span>
+              Get Started <span className="arrow-span">{"›"}</span>
             </Link>
           </div>
         </div>
