@@ -9,6 +9,9 @@ const query = graphql`
     ) {
       title
       parapgraph
+      image {
+        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+      }
     }
   }
 `
@@ -17,13 +20,17 @@ const FeatureOne = () => {
   const data = useStaticQuery(query)
   console.log(data.contentfulArticle.title)
   const featureOne = data.contentfulArticle
-  console.log(featureOne)
+  console.log(featureOne.image.gatsbyImageData)
+  const image = featureOne.image.gatsbyImageData
 
   const { title, parapgraph } = featureOne
-  console.log(parapgraph)
   return (
     <div>
-      <SpotlightGrid title={title} parapgraph={parapgraph}></SpotlightGrid>
+      <SpotlightGrid
+        title={title}
+        parapgraph={parapgraph}
+        image={image}
+      ></SpotlightGrid>
     </div>
   )
 }
