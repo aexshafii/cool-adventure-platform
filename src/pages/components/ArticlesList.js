@@ -11,6 +11,7 @@ const ArticlesList = ({ articles = [] }) => {
           <div key="" className="recipe">
             <GatsbyImage image={article.image.gatsbyImageData} alt={title} />
             <h4>{article.title}</h4>
+            <p>{article.parapgraph}</p>
             <Link to="/">
               Learn More<span className="arrow-span">{"›"}</span>
             </Link>

@@ -5,16 +5,13 @@ const query = graphql`
   {
     allContentfulArticle(filter: { node_locale: { eq: "en-US" } }) {
       nodes {
-        richText {
-          raw
-        }
         title
         node_locale
         image {
           gatsbyImageData(layout: FIXED, placeholder: TRACED_SVG)
         }
-
         id
+        parapgraph
       }
     }
   }
