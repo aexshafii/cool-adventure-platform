@@ -18,24 +18,29 @@ const Navbar = () => {
         <div className=" nav-links-container">
           <div className={"nav-links show-links"}>
             <Link
-              to="/recipes"
+              to="/whatsincluded"
               className="nav-link"
               activeClassName="active-link"
             >
               What's Included
             </Link>
-            <Link to="/tags" className="nav-link" activeClassName="active-link">
-              Sign in
-            </Link>
+
             <Link
-              to="/about"
+              to="/pricing"
               className="nav-link"
               activeClassName="active-link"
             >
               Pricing
             </Link>
+            <Link
+              to="/signin"
+              className="nav-link"
+              activeClassName="active-link"
+            >
+              Sign in
+            </Link>
             <div className="nav-link"></div>
-            <Link to="/contact" className="btn contact-link">
+            <Link to="/getstarted" className="btn contact-link">
               Get Started <span className="arrow-span">{"›"}</span>
             </Link>
           </div>

@@ -402,9 +402,10 @@ form > *:last-child {
 .contact-link {
   display: flex;
   justify-content: center;
-  width: 10rem;
+  width: 9rem;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.4rem;
+  font-size: 0.8rem;
 }
 .contact-link a {
   padding: 0.15rem 1rem;
@@ -445,7 +446,7 @@ form > *:last-child {
   .nav-link {
     padding: 0;
     border-top: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     white-space: nowrap;
     padding: 0.15rem 1rem;
