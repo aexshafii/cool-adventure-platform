@@ -16,9 +16,14 @@ const query = graphql`
 const FeatureOne = () => {
   const data = useStaticQuery(query)
   console.log(data.contentfulArticle.title)
+  const featureOne = data.contentfulArticle
+  console.log(featureOne)
+
+  const { title, parapgraph } = featureOne
+  console.log(parapgraph)
   return (
     <div>
-      <h4>All Articles</h4>
+      <SpotlightGrid title={title} parapgraph={parapgraph}></SpotlightGrid>
     </div>
   )
 }

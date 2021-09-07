@@ -1,7 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-
 import Paper from "@material-ui/core/Paper"
 
 const useStyles = makeStyles(theme => ({
@@ -17,19 +16,21 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function SpotlightGrid({ featureOne = [] }) {
+const SpotlightGrid = ({ title, parapgraph }) => {
   const classes = useStyles()
-  console.log(featureOne.title)
+  console.log(title)
   return (
     <main className="page">
       <Grid container className={classes.root} spacing={5}>
         <Grid item xs={12}>
           <Grid container justifyContent="center" spacing={4}>
             <Grid item>
-              <Paper className={classes.paper}>alo</Paper>
+              <Paper className={classes.paper}>
+                <h2> {title}</h2> <div> {parapgraph}</div>
+              </Paper>
             </Grid>
             <Grid item>
-              <Paper className={classes.paper}>Hala</Paper>
+              <Paper className={classes.paper}></Paper>
             </Grid>
             <Grid item>
               <Paper className={classes.paper}>MAdrid</Paper>
@@ -41,3 +42,4 @@ export default function SpotlightGrid({ featureOne = [] }) {
     </main>
   )
 }
+export default SpotlightGrid
