@@ -121,6 +121,7 @@ h1 {
 
 h2 {
   font-size: 0.9rem;
+  line-height: 22px;
 }
 h3 {
   font-size: 0.9rem;
@@ -407,9 +408,17 @@ form > *:last-child {
 }
 .feature-image {
   position: relative;
-  bottom: 5rem;
-  left: 13rem;
+  bottom: 17.7rem;
+  left: 10rem;
   z-index: 1;
+}
+.feature-text-container {
+  padding-top: 6rem !important;
+  padding: 1.5rem;
+}
+.phone {
+  padding-right: 3.3rem;
+  padding-top: 0.4rem;
 }
 @media screen and (min-width: 992px) {
   .navbar {
