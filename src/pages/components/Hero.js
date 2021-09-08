@@ -25,7 +25,6 @@ const Hero = () => {
         <article>
           <h2> {aboveText}</h2>
           <h1>{mainHeader}</h1>
-
           <h3>{subText}</h3>
           <div className="hero-ctas">
             <Link to="/contact" className="btn hero-btn">
