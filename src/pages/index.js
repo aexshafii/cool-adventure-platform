@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "./components/Layout"
 import Hero from "./components/Hero"
-import FeatureOne from "./components/SpotlightFeatures"
+import SpotlightGrid from "./components/SpotlightGrid"
 export default function Home() {
   return (
     <Layout>
       <Hero />
-      <FeatureOne></FeatureOne>
+      <SpotlightGrid></SpotlightGrid>
     </Layout>
   )
 }

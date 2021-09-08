@@ -1,8 +1,11 @@
 import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Paper from "@material-ui/core/Paper"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { makeStyles } from "@material-ui/core/styles"
+
+import FeatureOne from "./FeatureOne"
+import FeatureTwo from "./FeatureTwo"
+import FeatureThree from "./FeatureThree"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,9 +20,8 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const SpotlightGrid = ({ title, parapgraph, image }) => {
+const SpotlightGrid = () => {
   const classes = useStyles()
-  console.log(image)
   return (
     <main className="page">
       <Grid container className={classes.root} spacing={5}>
@@ -27,15 +29,18 @@ const SpotlightGrid = ({ title, parapgraph, image }) => {
           <Grid container justifyContent="center" spacing={4}>
             <Grid item>
               <Paper className={classes.paper}>
-                <h2> {title}</h2> <div> {parapgraph}</div>
-                <GatsbyImage image={image} alt={title} />
+                <FeatureOne />
               </Paper>
             </Grid>
             <Grid item>
-              <Paper className={classes.paper}>sup</Paper>
+              <Paper className={classes.paper}>
+                <FeatureTwo />
+              </Paper>
             </Grid>
             <Grid item>
-              <Paper className={classes.paper}>MAdrid</Paper>
+              <Paper className={classes.paper}>
+                <FeatureThree></FeatureThree>
+              </Paper>
             </Grid>
           </Grid>
         </Grid>
