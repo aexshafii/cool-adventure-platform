@@ -253,17 +253,17 @@ form > *:last-child {
   padding-top: 3rem;
 }
 
-.feature-image {
+.spotlight-image {
   position: relative;
   bottom: 19rem;
   left: 10rem;
   z-index: 1;
 }
-.feature-text-container {
+.spotlight-text-container {
   padding-top: 6rem !important;
   padding: 1.5rem;
 }
-.feature-link {
+.spotlight-link {
   color: #f65928;
   font-weight: bold;
 }

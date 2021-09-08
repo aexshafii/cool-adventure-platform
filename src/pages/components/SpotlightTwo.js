@@ -20,26 +20,26 @@ const query = graphql`
   }
 `
 
-const FeatureTwo = () => {
+const SpotlightTwo = () => {
   const data = useStaticQuery(query)
-  const featureTwoData = data.contentfulSpotlight2
-  const image = featureTwoData.image.gatsbyImageData
-  const { title, paragraph } = featureTwoData
+  const spotlightTwoData = data.contentfulSpotlight2
+  const image = spotlightTwoData.image.gatsbyImageData
+  const { title, paragraph } = spotlightTwoData
   return (
     <>
-      <div className="feature-text-container">
+      <div className="spotlight-text-container">
         <h2> {title}</h2> <p> {paragraph}</p>
-        <p className="feature-link">
+        <p className="spotlight-link">
           <Link to="/">
-            <p className="feature-link">
+            <p className="spotlight-link">
               Learn more <span className="arrow-span">{"›"}</span>
             </p>
           </Link>
         </p>
       </div>
-      <GatsbyImage className="feature-image" image={image} alt={title} />
+      <GatsbyImage className="spotlight-image" image={image} alt={title} />
     </>
   )
 }
 
-export default FeatureTwo
+export default SpotlightTwo

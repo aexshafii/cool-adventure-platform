@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const query = graphql`
   {
-    contentfulSpotlight1(contentful_id: { eq: "7bgbg4N2Sy0JlO3v6lpU6O" }) {
+    contentfulSpotlight3(contentful_id: { eq: "1zWoWgLvBVbjxsh1HXr4CC" }) {
       title
       paragraph
       image {
@@ -19,30 +19,29 @@ const query = graphql`
     }
   }
 `
-const FeatureOne = () => {
-  const data = useStaticQuery(query)
-  const featureOneData = data.contentfulSpotlight1
-  const image = featureOneData.image.gatsbyImageData
 
-  const { title, paragraph } = featureOneData
+const SpotlightThree = () => {
+  const data = useStaticQuery(query)
+  const spotlightThreeData = data.contentfulSpotlight3
+  const image = spotlightThreeData.image.gatsbyImageData
+  const { title, paragraph } = spotlightThreeData
   return (
     <>
-      <div className="feature-text-container">
+      <div className="spotlight-text-container">
         <h2> {title}</h2> <p> {paragraph}</p>
         <Link to="/">
-          <p className="feature-link">
+          <p className="spotlight-link">
             Learn more <span className="arrow-span">{"›"}</span>
           </p>
         </Link>
       </div>
       <GatsbyImage
-        className="feature-image"
+        className="spotlight-image phone"
         image={image}
         alt={title}
-        width={100}
       />
     </>
   )
 }
 
-export default FeatureOne
+export default SpotlightThree

@@ -3,9 +3,9 @@ import Grid from "@material-ui/core/Grid"
 import Paper from "@material-ui/core/Paper"
 import { makeStyles } from "@material-ui/core/styles"
 
-import FeatureOne from "./FeatureOne"
-import FeatureTwo from "./FeatureTwo"
-import FeatureThree from "./FeatureThree"
+import SpotlightOne from "./SpotlightOne"
+import SpotlightTwo from "./SpotlightTwo"
+import SpotlightThree from "./SpotlightThree"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,17 +34,17 @@ const SpotlightGrid = () => {
           >
             <Grid item>
               <Paper className={classes.paper}>
-                <FeatureOne />
+                <SpotlightOne />
               </Paper>
             </Grid>
             <Grid item>
               <Paper className={classes.paper}>
-                <FeatureTwo />
+                <SpotlightTwo />
               </Paper>
             </Grid>
             <Grid item>
               <Paper className={classes.paper}>
-                <FeatureThree></FeatureThree>
+                <SpotlightThree />
               </Paper>
             </Grid>
           </Grid>
