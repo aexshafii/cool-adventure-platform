@@ -5,9 +5,9 @@ import { Link } from "gatsby"
 
 const query = graphql`
   {
-    contentfulArticle(contentful_id: { eq: "nDx95pNngCTOYutTmJ5Sk" }) {
+    contentfulSpotlight1(contentful_id: { eq: "7bgbg4N2Sy0JlO3v6lpU6O" }) {
       title
-      parapgraph
+      paragraph
       image {
         gatsbyImageData(
           layout: CONSTRAINED
@@ -21,14 +21,14 @@ const query = graphql`
 `
 const FeatureOne = () => {
   const data = useStaticQuery(query)
-  const featureOneData = data.contentfulArticle
+  const featureOneData = data.contentfulSpotlight1
   const image = featureOneData.image.gatsbyImageData
 
-  const { title, parapgraph } = featureOneData
+  const { title, paragraph } = featureOneData
   return (
     <>
       <div className="feature-text-container">
-        <h2> {title}</h2> <p> {parapgraph}</p>
+        <h2> {title}</h2> <p> {paragraph}</p>
         <Link to="/">
           <p className="feature-link">
             Learn more <span className="arrow-span">{"›"}</span>
