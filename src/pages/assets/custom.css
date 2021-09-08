@@ -1,0 +1,12 @@
+.masthead {
+  width: 100%;
+  min-height: 100vh;
+  z-index: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  opacity: 0.1;
+}

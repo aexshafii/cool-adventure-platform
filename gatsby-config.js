@@ -15,6 +15,21 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/pages/assets/`,
+      },
+    },
+
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `bapkyyx4dp18`,

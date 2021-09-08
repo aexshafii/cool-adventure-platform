@@ -53,11 +53,10 @@ html {
 
 body {
   background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 1),
-      rgba(1, 0, 0, 0.5)
-    ),
-    url("./hero-background@2x.png");
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(1, 0, 0, 0.5)
+  );
   color: white;
   font-family: var(--bodyFont);
   font-weight: 400;
