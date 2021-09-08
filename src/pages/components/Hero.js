@@ -1,21 +1,38 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+
+const query = graphql`
+  {
+    contentfulHero(contentful_id: { eq: "4a0G8FiJXTHdgtkeYHcbEA" }) {
+      aboveText
+      mainHeader
+      subText
+      mainCta
+      secondaryCta
+    }
+  }
+`
 
 const Hero = () => {
+  const data = useStaticQuery(query)
+  const heroData = data.contentfulHero
+
+  const { aboveText, mainHeader, subText, mainCta, secondaryCta } = heroData
   return (
     <>
       <section className="hero-section">
         <article>
-          <h2>AMERICA’S #1 RATED ADVENTURE PLATFORM</h2>
-          <h1>Take control of your weekends</h1>
+          <h2> {aboveText}</h2>
+          <h1>{mainHeader}</h1>
 
-          <h3>Find adventure anywhere.</h3>
+          <h3>{subText}</h3>
           <div className="hero-ctas">
             <Link to="/contact" className="btn hero-btn">
-              Get Started <span className="arrow-span">{"›"}</span>
+              {mainCta} <span className="arrow-span">{"›"}</span>
             </Link>
             <Link to="/contact" className="hero-btn btn grey">
-              Request a demo <span className="arrow-span">{"›"}</span>
+              {secondaryCta} <span className="arrow-span">{"›"}</span>
             </Link>
           </div>
         </article>
