@@ -10,7 +10,7 @@ const query = graphql`
       title
       parapgraph
       image {
-        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 175)
       }
     }
   }
@@ -23,7 +23,7 @@ const FeatureTwo = () => {
   return (
     <>
       <h2> {title}</h2> <div> {parapgraph}</div>
-      <GatsbyImage image={image} alt={title} />
+      <GatsbyImage className="feature-image" image={image} alt={title} />
     </>
   )
 }

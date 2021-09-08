@@ -405,7 +405,12 @@ form > *:last-child {
   bottom: 0.03rem;
   margin-left: 0.4em;
 }
-
+.feature-image {
+  position: relative;
+  bottom: 5rem;
+  left: 13rem;
+  z-index: 1;
+}
 @media screen and (min-width: 992px) {
   .navbar {
     height: 6rem;
