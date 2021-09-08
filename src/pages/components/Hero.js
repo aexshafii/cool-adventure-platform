@@ -7,9 +7,9 @@ const Hero = () => {
       <section className="hero-section">
         <article>
           <h2>AMERICA’S #1 RATED ADVENTURE PLATFORM</h2>
-          <h1>Take control of your weekends.</h1>
+          <h1>Take control of your weekends</h1>
 
-          <h3>Find adventure anywhere</h3>
+          <h3>Find adventure anywhere.</h3>
           <div className="hero-ctas">
             <Link to="/contact" className="btn hero-btn">
               Get Started <span className="arrow-span">{"›"}</span>
