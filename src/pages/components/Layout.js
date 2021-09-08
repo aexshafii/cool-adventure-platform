@@ -1,7 +1,6 @@
 import React from "react"
 import Navbar from "./Navbar"
 import styled from "styled-components"
-import SpacingGrid from "./SpotlightGrid"
 
 import "normalize.css"
 import "../assets/main.css"
