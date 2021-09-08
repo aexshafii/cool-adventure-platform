@@ -26,7 +26,12 @@ const SpotlightGrid = () => {
     <div className="grid-div">
       <Grid container className={classes.root} spacing={5}>
         <Grid item xs={12}>
-          <Grid container justifyContent="center" spacing={4}>
+          <Grid
+            container
+            justifyContent="center"
+            spacing={4}
+            className="grid-container"
+          >
             <Grid item>
               <Paper className={classes.paper}>
                 <FeatureOne />
