@@ -404,7 +404,7 @@ form > *:last-child {
   opacity: 1;
   font-size: 1em;
   position: relative;
-  bottom: 0.03rem;
+  bottom: 0.01rem;
   margin-left: 0.4em;
 }
 .grid-div {
@@ -412,13 +412,17 @@ form > *:last-child {
 }
 .feature-image {
   position: relative;
-  bottom: 17.7rem;
+  bottom: 19rem;
   left: 10rem;
   z-index: 1;
 }
 .feature-text-container {
   padding-top: 6rem !important;
   padding: 1.5rem;
+}
+.feature-link {
+  color: #f65928;
+  font-weight: bold;
 }
 .phone {
   padding-right: 3.3rem;
