@@ -4,9 +4,11 @@ import Hero from "./components/Hero"
 import SpotlightGrid from "./components/SpotlightGrid"
 export default function Home() {
   return (
-    <Layout>
-      <Hero />
-      <SpotlightGrid></SpotlightGrid>
-    </Layout>
+    <main className="page">
+      <Layout>
+        <Hero />
+        <SpotlightGrid />
+      </Layout>
+    </main>
   )
 }

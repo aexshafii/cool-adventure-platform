@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 const SpotlightGrid = () => {
   const classes = useStyles()
   return (
-    <main className="page">
+    <div className="grid-div">
       <Grid container className={classes.root} spacing={5}>
         <Grid item xs={12}>
           <Grid container justifyContent="center" spacing={4}>
@@ -46,7 +46,7 @@ const SpotlightGrid = () => {
         </Grid>
         <Grid item xs={12}></Grid>
       </Grid>
-    </main>
+    </div>
   )
 }
 export default SpotlightGrid

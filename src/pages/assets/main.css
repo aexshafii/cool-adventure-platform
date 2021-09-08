@@ -102,6 +102,7 @@ p {
   margin: 0;
   margin-bottom: 1rem;
   max-width: 40em;
+  font-size: 0.8rem;
 }
 
 h1,
@@ -405,6 +406,9 @@ form > *:last-child {
   position: relative;
   bottom: 0.03rem;
   margin-left: 0.4em;
+}
+.grid-div {
+  padding-top: 3rem;
 }
 .feature-image {
   position: relative;

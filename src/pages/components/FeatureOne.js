@@ -26,9 +26,8 @@ const FeatureOne = () => {
   const { title, parapgraph } = featureOneData
   return (
     <>
-      {" "}
       <div className="feature-text-container">
-        <h2> {title}</h2> <div> {parapgraph}</div>
+        <h2> {title}</h2> <p> {parapgraph}</p>
       </div>
       <GatsbyImage
         className="feature-image"

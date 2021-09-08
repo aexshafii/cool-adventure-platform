@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Paper from "@material-ui/core/Paper"
-import { makeStyles } from "@material-ui/core/styles"
 
 const query = graphql`
   {
@@ -23,7 +21,7 @@ const FeatureThree = () => {
   return (
     <>
       <div className="feature-text-container">
-        <h2> {title}</h2> <div> {parapgraph}</div>
+        <h2> {title}</h2> <p> {parapgraph}</p>
       </div>
       <GatsbyImage className="feature-image phone" image={image} alt={title} />
     </>
