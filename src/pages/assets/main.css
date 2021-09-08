@@ -227,7 +227,7 @@ form > *:last-child {
   color: white;
   letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
-  border-top: 1px solid var(--grey-500);
+  border-top: 1px solid grey;
   transition: var(--transition);
 }
 
