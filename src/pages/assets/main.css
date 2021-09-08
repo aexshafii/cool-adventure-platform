@@ -6,6 +6,9 @@
 }
 
 :root {
+  --primary-500: #645cff;
+  --primary-700: #4640b3;
+
   /* box shadows */
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -21,7 +24,6 @@
   --smallText: 0.8em;
   --extraSmallText: 0.7em;
   /* rest */
-  --backgroundColor: var(--grey-0);
   --textColor: var(--grey-1000);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
