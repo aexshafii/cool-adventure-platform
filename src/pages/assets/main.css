@@ -57,7 +57,7 @@ body {
       rgba(0, 0, 0, 1),
       rgba(1, 0, 0, 0.5)
     ),
-    url("./hero-background@2x.png");
+    url("./hero-background@2x.jpg");
   color: white;
   font-family: var(--bodyFont);
   font-weight: 400;
